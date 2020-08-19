@@ -1,0 +1,17 @@
+.a {
+    background-color: rgb(173, 173, 173);
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.d {
+    display: inline;
+    padding: 30px;
+    font-size: 35px;
+}
+
+.b {
+    border: 2px solid black;
+    margin: 0px;
+    padding: 0px;
+}
