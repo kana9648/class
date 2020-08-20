@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX Shadow</title>
+    <style>
+        div {
+            width: 300px;
+            height: 150px;
+            border: 2px solid gray;
+            border-radius: 20px;
+        }
+
+        .a {
+            /* 수직 거리 , 수평 거리 , 흐림정도 , 번짐정도 , 색상 , inset */
+            box-shadow: 2px 2px 2px 2px gray;
+            float: left;
+        }
+
+        .b {
+            box-shadow: 10px 5px 10px 1px rgb(155, 40, 40) inset;
+            display: inline-block
+        }
+
+        .c {
+            box-shadow: -10px -10px 10px -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <h1>CSS Box Shadow</h1>
+        <ul>
+            <li>box-shadow: px px px px color;</li>
+        </ul>
+    </div>
+    &nbsp;
+    <div class="b">
+        <h1>CSS Box Shadow Sample</h1>
+    </div>
+    <br>
+    <br>
+    <div class="c">
+        <h1>CSS Box Shadow Sample</h1>
+    </div>
+</body>
+
+</html>
