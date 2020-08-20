@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .a {
+            width: 100px;
+            height: 100px;
+            background-color: darkgray;
+            position: absolute;
+            /* 고정좌표 */
+        }
+
+        .b {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 129, 129);
+            position: relative;
+            top: 20px;
+            left: 20px;
+            /* 변동좌표 */
+        }
+
+        .c {
+            width: 300px;
+            height: 300px;
+            border: darkgray 1px solid;
+            position: relative;
+        }
+
+        .d {
+            width: 60px;
+            height: 60px;
+            background-color: darkmagenta;
+            position: absolute;
+        }
+
+        /* 부모안에 있는 자식 좌표 이동시
+        부모테그에 position: relative; */
+        .e {
+            width: 60px;
+            height: 60px;
+            background-color: darkmagenta;
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+        .f {
+            width: 60px;
+            height: 60px;
+            background-color: darkmagenta;
+            position: absolute;
+            right: 0;
+        }
+
+        .g {
+            width: 60px;
+            height: 60px;
+            background-color: darkmagenta;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+        }
+
+        .h {
+            width: 60px;
+            height: 60px;
+            background-color: darkmagenta;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+        }
+
+        .aa {
+            width: 60px;
+            height: 60px;
+            background-color: darkmagenta;
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+        .ab {
+            width: 60px;
+            height: 60px;
+            background-color: darkmagenta;
+            position: absolute;
+            top: 0;
+        }
+
+        .ac {
+            width: 60px;
+            height: 60px;
+            background-color: darkmagenta;
+            position: absolute;
+            bottom: 0;
+
+        }
+
+        .ad {
+            width: 60px;
+            height: 60px;
+            background-color: darkmagenta;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            transform: translate(-25%, -25%);
+        }
+
+        .ae {
+            width: 60px;
+            height: 60px;
+            background-color: darkmagenta;
+            position: absolute;
+            bottom: 25%;
+            left: 25%;
+            transform: translate(-25%, 25%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Position</h1>
+    <div>
+        <div class="a"></div>
+        <div class="b"></div>
+    </div>
+    <br>
+    <div class="c">
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+    </div>
+    <br>
+    <div class="c">
+        <div class="aa"></div>
+        <div class="ab"></div>
+        <div class="ac"></div>
+        <div class="ad"></div>
+        <div class="ae"></div>
+    </div>
+</body>
+
+</html>
