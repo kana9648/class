@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        input[type=text] {
+            background: gray;
+        }
+
+        input[type=password] {
+            background: blue;
+        }
+
+        img[src $=jpg] {
+            border: solid 1px red;
+        }
+
+        img[src*=adobe] {
+            border: solid 3px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text">
+        <input type="password">
+    </form>
+    <img src="../img/imgsample2.jpg" alt="icon" width="200px">
+    <img src="../icon/svgs/brands/adobe.svg" alt="icon" width="200px">
+</body>
+
+</html>
