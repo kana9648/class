@@ -33,6 +33,31 @@ body {
     /* 수직 정렬 */
 }
 
+#box2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    border-radius: 100px;
+    text-align: center;
+    animation-name: rote2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#box2:hover {
+    animation-name: rote;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#box2>h1 {
+    line-height: 200px;
+}
+
 @keyframes rint {
     from {
         left: 0;
@@ -58,5 +83,58 @@ body {
     to {
         left: 500px;
         transform: rotate(360deg);
+    }
+}
+
+@keyframes rote {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    25% {
+
+        transform: rotate(90deg);
+    }
+
+    50% {
+
+        transform: rotate(180deg);
+    }
+
+    75% {
+
+        transform: rotate(270deg);
+    }
+
+    to {
+
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rote2 {
+    from {
+        background-color: darkred;
+    }
+
+    25% {
+
+        background-color: rgb(168, 45, 45);
+    }
+
+    50% {
+
+        background-color: rgb(168, 84, 84);
+    }
+
+    75% {
+
+        background-color: rgb(172, 137, 137);
+    }
+
+    to {
+
+        background-color: rgb(212, 122, 122);
     }
 }
