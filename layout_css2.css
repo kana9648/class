@@ -1,0 +1,91 @@
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+header {
+}
+header nav {
+  float: left;
+  width: 70%;
+  margin-top: 50px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  float: left;
+  margin: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 2em;
+}
+h1 {
+  font-size: 1.5em;
+}
+h1 {
+  font-size: 1em;
+}
+
+p {
+  line-height: 20px;
+  font-size: 12px;
+}
+
+section {
+  width: 580px;
+  float: left;
+  padding: 5px;
+}
+
+section article {
+  width: 250px;
+  height: 220px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px black solid;
+  float: left;
+}
+
+aside {
+  width: 200px;
+  height: auto;
+  margin-top: 80px;
+  border: 1px solid darkgreen;
+  float: right;
+}
+
+footer {
+  clear: both;
+  width: 800px;
+  margin-bottom: 0;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 30px 0 30px 0;
+}
+
+.at1:hover {
+  background-color: rgb(222, 184, 135, 0.5);
+  transition-duration: 2s;
+}
+.at2:hover {
+  background-color: rgb(222, 184, 135, 0.5);
+  transition-duration: 2s;
+}
+.at3:hover {
+  background-color: rgb(222, 184, 135, 0.5);
+  transition-duration: 2s;
+}
+.at4:hover {
+  background-color: rgb(222, 184, 135, 0.5);
+  transition-duration: 2s;
+}

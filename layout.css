@@ -1,0 +1,64 @@
+body {
+    font-family: "맑은 고딕", "굴림";
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #069;
+    padding: 10px;
+    color: white;
+}
+
+h1 {
+    text-align: left;
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    margin-top: 45px;
+}
+
+nav ul {
+    display: inline;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    border: solid 5px #333;
+    padding: 5px;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #333;
+    border: solid 5px #333;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+dt {
+    color: purple;
+    font-weight: bold;
+}
+
+h3 {
+    background-image: url(file:///E:/html/icon/svgs/solid/bacon.svg);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position: left center;
+}

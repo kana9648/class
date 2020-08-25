@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Test2</title>
+    <style>
+      fieldset {
+        border: none;
+      }
+      #cd {
+        border: 1px solid black;
+        padding-left: 25px;
+        padding-right: 25px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .can {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cd">
+      <h1>Form Sample Test</h1>
+      Form Sample Test
+      <hr />
+      <form>
+        <fieldset>
+          <legend><h1>information</h1></legend>
+          <div id="can">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name" required />
+            <br />
+            <label for="tel">telephone</label>
+            <input type="tel" id="tel" placeholder="telephone" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><h1>information</h1></legend>
+          <label>
+            <input type="radio" id="radio" name="radio" />
+            information A
+            <br />
+            <input type="radio" id="radio" name="radio" />
+            information B
+            <br />
+            <input type="radio" id="radio" name="radio" />
+            information C
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend><h1>Note</h1></legend>
+          <textarea name="note" id="note" cols="60" rows="5"></textarea>
+          <br />
+          <input type="submit" id="sub" value="submit" />
+          <input type="reset" id="re" value="reset" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

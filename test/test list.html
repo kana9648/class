@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            counter-increment: rint;
+        }
+
+        p:before {
+            content: counter(rint) ".";
+        }
+
+        p:after {
+            content: "-"attr(data-page) "page"
+        }
+
+        p::selection {
+            background-color: indigo;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text</h1>
+    <p data-page="50">
+        Text sample CSS Selector Sample Word Selector Sample CSS Word Selector Sample Test Text
+        Text sample CSS Selector Sample Word Selector Sample CSS Word Selector Sample Test Text
+        Text sample CSS Selector Sample Word Selector Sample CSS Word Selector Sample Test Text
+        Text sample CSS Selector Sample Word Selector Sample CSS Word Selector Sample Test Text
+        Text sample CSS Selector Sample Word Selector Sample CSS Word Selector Sample Test Text
+    </p>
+    <p data-page="90">
+        Text sample CSS Selector Sample Word Selector Sample CSS Word Selector Sample Test Text
+        Text sample CSS Selector Sample Word Selector Sample CSS Word Selector Sample Test Text
+        Text sample CSS Selector Sample Word Selector Sample CSS Word Selector Sample Test Text
+        Text sample CSS Selector Sample Word Selector Sample CSS Word Selector Sample Test Text
+        Text sample CSS Selector Sample Word Selector Sample CSS Word Selector Sample Test Text
+    </p>
+</body>
+
+</html>

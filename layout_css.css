@@ -1,0 +1,102 @@
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+img {
+  display: block;
+}
+
+nav {
+  border: pink solid 1px;
+  background-color: rgb(244, 96, 117);
+  width: 960px;
+  margin: 0 auto;
+  height: 150px;
+}
+
+ul {
+  display: inline;
+}
+li {
+  display: inline-block;
+  margin-top: 80px;
+  margin-right: 15px;
+}
+nav > img {
+  float: right;
+}
+section {
+  width: 760px;
+  margin: 0 auto;
+  float: left;
+}
+.at1 {
+  border: black 1px solid;
+  width: 360px;
+  height: 250px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.at2 {
+  border: black 1px solid;
+  width: 360px;
+  height: 250px;
+  float: left;
+  margin-bottom: 10px;
+}
+.at3 {
+  border: black 1px solid;
+  width: 360px;
+  height: 250px;
+  float: left;
+  margin-right: 10px;
+}
+.at4 {
+  border: black 1px solid;
+  width: 360px;
+  height: 250px;
+  float: left;
+}
+.at1:hover {
+  background-color: rgb(222, 184, 135, 0.5);
+  transition-duration: 2s;
+}
+.at2:hover {
+  background-color: rgb(222, 184, 135, 0.5);
+  transition-duration: 2s;
+}
+.at3:hover {
+  background-color: rgb(222, 184, 135, 0.5);
+  transition-duration: 2s;
+}
+.at4:hover {
+  background-color: rgb(222, 184, 135, 0.5);
+  transition-duration: 2s;
+}
+
+aside {
+  border: green 2px solid;
+  float: right;
+  margin-top: 75px;
+}
+
+footer {
+  border: solid 1px black;
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+  color: white;
+  background-color: black;
+}
