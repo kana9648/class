@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Tag</title>
+  </head>
+  <body>
+    <audio src="../media/bgsound.mp3" controls autoplay loop></audio>
+    <br />
+    <video
+      src="../media/Painting.mp4"
+      controls
+      autoplay
+      loop
+      poster="../media/flame.jpg"
+    >
+      <track src="../media/Painting.vtt" srclang="ko" label="korean" default />
+    </video>
+    <br />
+    <video controls autoplay loop width="450">
+      <source src="../media/Painting.mp4" type="video/mp4" />
+      <source src="../media/Painting.webm" type="video/webm" />
+      <source src="../media/Painting.ogv" type="video/ogv" />
+      <!-- <object
+        data="../media/Painting.swf"
+        type="applicaton/x-shockwave-flash"
+      ></object> -->
+      <!-- <track src="../media/Painting.vtt" srclang="ko" label="korean" default /> -->
+      <track src="../media/Painting.vtt" srclang="ko" label="korean" default />
+    </video>
+  </body>
+</html>
