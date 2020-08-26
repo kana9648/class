@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <style>
+      #wrap {
+        width: 960px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+      }
+      header {
+        width: 960px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+        height: 150px;
+        background-color: burlywood;
+      }
+      footer {
+        width: 960px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+        height: 150px;
+        background-color: rgb(255, 169, 56);
+        margin-top: 5px;
+      }
+      #main {
+        width: 960px;
+        /* border: black 1px solid; */
+        margin: 0 auto;
+      }
+      .grup {
+        width: 960px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        overflow: hidden;
+      }
+      .grup:nth-child(1) {
+        height: 90px;
+      }
+      .grup:nth-child(1) > section {
+        height: 90px;
+      }
+      .grup:nth-child(2) {
+        height: 150px;
+      }
+
+      .grup:nth-child(3) {
+        height: 700px;
+      }
+      .grup:nth-child(3) > section {
+        height: 700px;
+      }
+      .grup:nth-child(4) {
+        height: 90px;
+      }
+      .grup:nth-child(4) > section {
+        height: 90px;
+      }
+      #box1 {
+        width: 625px;
+        background: green;
+        float: left;
+      }
+      #box2 {
+        width: 325px;
+        background: yellow;
+        float: right;
+      }
+      #box3 {
+        width: 625px;
+        height: 40px;
+        background: tomato;
+        float: left;
+      }
+      #box4 {
+        width: 325px;
+        background: turquoise;
+        height: 70px;
+        float: right;
+      }
+      #box5 {
+        width: 625px;
+        height: 100px;
+        background: rosybrown;
+        float: left;
+      }
+      #box6 {
+        width: 325px;
+        background: rgb(6, 122, 111);
+        height: 70px;
+        float: right;
+      }
+      #box7 {
+        width: 625px;
+        background: royalblue;
+        float: left;
+      }
+      #box8 {
+        width: 325px;
+        background: skyblue;
+        float: right;
+      }
+
+      #box9 {
+        width: 625px;
+        background: rgb(220, 65, 225);
+        float: left;
+      }
+      #box10 {
+        width: 325px;
+        background: rgb(97, 108, 112);
+        float: right;
+      }
+      .grup > section {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div></div>
+      </header>
+      <section id="main">
+        <article class="grup">
+          <section id="box1"></section>
+          <section id="box2"></section>
+        </article>
+        <article class="grup">
+          <section id="box3"></section>
+          <section id="box4"></section>
+          <section id="box5"></section>
+          <section id="box6"></section>
+        </article>
+        <article class="grup">
+          <section id="box7"></section>
+          <section id="box8"></section>
+        </article>
+        <article class="grup">
+          <section id="box9"></section>
+          <section id="box10"></section>
+        </article>
+      </section>
+      <footer></footer>
+    </div>
+  </body>
+</html>

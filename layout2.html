@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layoutsample</title>
+    <style>
+      body,
+      div {
+        padding: 0;
+        margin: 0;
+      }
+
+      #wrap {
+        overflow: hidden;
+        background-color: slateblue;
+        width: 100%;
+        font-size: 24px;
+        color: black;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      #header {
+        width: 100%;
+        height: 220px;
+        line-height: 200px;
+        background: chartreuse;
+        margin-bottom: 10px;
+      }
+
+      #content {
+        width: 100%;
+        height: 1460px;
+        background: coral;
+        margin-bottom: 10px;
+      }
+
+      #footer {
+        width: 100%;
+        height: 305px;
+        background: rgb(255, 198, 177);
+        margin-bottom: 10px;
+        line-height: 305px;
+      }
+
+      .container {
+        width: 1080px;
+        background-color: rgba(117, 117, 117, 0.4);
+        margin: 0 auto;
+        height: inherit;
+      }
+      .box1 {
+        width: 740px;
+        height: 125px;
+        line-height: 125px;
+        background: indigo;
+        margin: 0 10px 10px 0;
+        float: left;
+      }
+      .box2 {
+        width: 330px;
+        height: 125px;
+        line-height: 125px;
+        background: rgb(89, 129, 238);
+        margin: 0 0 10px 0;
+        float: left;
+      }
+      .box3 {
+        width: 740px;
+        height: 300px;
+        line-height: 300px;
+        background: rgb(89, 238, 193);
+        margin: 0 10px 10px 0;
+        float: left;
+      }
+      .box3 .box3-1 {
+        width: 740px;
+        height: 45px;
+        line-height: 45px;
+        background: rgb(32, 57, 104);
+        margin-bottom: 10px;
+      }
+      .box3 .box3-2 {
+        width: 740px;
+        height: 245px;
+        line-height: 245px;
+        background: rgb(162, 191, 245);
+      }
+
+      .box4 {
+        width: 330px;
+        height: 145px;
+        line-height: 145px;
+        background: tan;
+        margin-bottom: 10px;
+        float: left;
+      }
+      .box4-1 {
+        width: 330px;
+        height: 145px;
+        line-height: 145px;
+        background: rgb(109, 99, 86);
+        margin-bottom: 10px;
+        float: left;
+      }
+
+      .box5 {
+        width: 740px;
+        height: 880px;
+        line-height: 880px;
+        background: rgb(136, 255, 152);
+        margin: 0 10px 10px 0;
+        float: left;
+      }
+      .box6 {
+        width: 330px;
+        height: 880px;
+        line-height: 880px;
+        background: rgb(238, 235, 89);
+        margin: 0 0 10px 0;
+        float: left;
+      }
+      .box7 {
+        width: 740px;
+        height: 125px;
+        line-height: 125px;
+        background: rgb(255, 136, 255);
+        margin: 0 10px 10px 0;
+        float: left;
+      }
+      .box8 {
+        width: 330px;
+        height: 125px;
+        line-height: 125px;
+        background: rgb(238, 89, 126);
+        margin: 0 0 10px 0;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <div class="container"></div>
+      </div>
+
+      <div id="content">
+        <div class="container">
+          <div class="box1">box1</div>
+          <div class="box2">box2</div>
+          <div class="box3">
+            <div class="box3-1">box3-1</div>
+            <div class="box3-2">box3-2</div>
+          </div>
+          <div class="box4">box4</div>
+          <div class="box4-1">box4-1</div>
+          <div class="box5">box5</div>
+          <div class="box6">box6</div>
+          <div class="box7">box7</div>
+          <div class="box8">box8</div>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

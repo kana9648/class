@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 960px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        text-align: center;
+      }
+      header {
+        width: 960px;
+        margin: 0 auto;
+        height: 150px;
+        border: 1px solid black;
+      }
+      #logo {
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      #logo:nth-child(1) {
+        float: left;
+      }
+      #logo:nth-last-child(1) {
+        float: right;
+      }
+      #search > input {
+        display: inline-block;
+        outline: none;
+        float: left;
+        padding: 10px;
+        width: 350px;
+        height: 35px;
+      }
+      #search > button {
+        display: inline-block;
+        outline: none;
+        float: right;
+        margin-right: 5px;
+      }
+      #search {
+        width: 450px;
+        height: 60px;
+        display: inline-block;
+        border: solid 1px black;
+        padding: 5px;
+        margin-top: 40px;
+      }
+
+      #side {
+        width: 250px;
+        border: 1px solid black;
+        display: inline-block;
+        float: right;
+      }
+      #side > iframe {
+        margin-top: 10px;
+      }
+      #video {
+        width: 695px;
+        border: 1px solid black;
+        float: left;
+        padding: 5px;
+      }
+      #video > iframe {
+        margin: 15px;
+      }
+      footer {
+        width: 960px;
+        border: black solid 1px;
+        clear: both;
+        height: 50px;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      #side > h2 {
+        margin-top: 0;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <img id="logo" src=https://img.icons8.com/ios/100/000000/youtube.png
+        alt="icon" />
+        <div id="search">
+          <input type="text" placeholder="Search" />
+          <button>
+            <img
+              src="https://img.icons8.com/ios/50/000000/google-web-search.png"
+            />
+          </button>
+        </div>
+        <img
+          id="logo"
+          src="https://img.icons8.com/color/96/000000/google-contacts.png"
+        />
+      </header>
+      <div id="main">
+        <div id="side">
+          <iframe
+            width="240"
+            height="200"
+            src="https://www.youtube.com/embed/HrjL-wXvses"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h2><a href="subhtml.html">test</a></h2>
+          <iframe
+            width="240"
+            height="200"
+            src="https://www.youtube.com/embed/HrjL-wXvses"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h2><a href="subhtml.html">test</a></h2>
+          <iframe
+            width="240"
+            height="200"
+            src="https://www.youtube.com/embed/HrjL-wXvses"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h2><a href="subhtml.html">test</a></h2>
+        </div>
+        <div id="video">
+          <iframe
+            width="640"
+            height="450"
+            src="https://www.youtube.com/embed/HrjL-wXvses"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h1 style="text-align: left">test video text</h1>
+          <hr />
+          <p style="text-align: left">test text video text test sample</p>
+        </div>
+      </div>
+      <footer>html test sample</footer>
+    </div>
+  </body>
+</html>
