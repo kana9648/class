@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $.ajax({
+          url: `news.php`,
+          dataType: `php`,
+          success: function (data) {
+            var $items = $(data).find(`items`);
+
+            if ($items.length > 0) {
+              $items = $items.slice(0, 10);
+              var $ulTag = $(`<ul/>`);
+              $.each($items, function (i, o) {
+                var $title = $(o).find(`title`).text();
+                var $link = $(o).find(`link`).text();
+
+                var $aTag = $(`<a/>`)
+                  .attr({
+                    href: $link,
+                    target: `_blank`,
+                  })
+                  .text($title);
+
+                var $litag = $(`<li/>`).append($aTag);
+              });
+              $(`.wrap`).append($ulTag);
+            }
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrap"></div>
+  </body>
+</html>
