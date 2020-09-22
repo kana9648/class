@@ -27,7 +27,9 @@
                   })
                   .text($title);
 
-                var $litag = $(`<li/>`).append($aTag);
+                var $liTag = $(`<li/>`).append($aTag);
+
+                $ulTag.append($liTag);
               });
               $(`.wrap`).append($ulTag);
             }
