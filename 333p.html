@@ -11,7 +11,7 @@
           url: `news.php`,
           dataType: `php`,
           success: function (data) {
-            var $items = $(data).find(`items`);
+            var $items = $(data).find(`item`);
 
             if ($items.length > 0) {
               $items = $items.slice(0, 10);
