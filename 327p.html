@@ -8,33 +8,29 @@
     <script>
       $(function () {
         $.ajax({
-          url: `dataset.xml`,
-          dataType: `xml`,
+          url: `news.php`,
+          dataType: `php`,
           success: function (data) {
-            var $data = $(data).find(`record`);
-            if ($data.length > 0) {
-              var tb = $(`<table/>`);
-              $.each($data, function (i, o) {
-                var $id = $(o).find(`id`).text();
+            var $items = $(data).find(`items`);
 
-                var $first_name = $(o).find(`first_name`).text();
+            if ($items.length > 0) {
+              $items = $items.slice(0, 10);
+              var $ulTag = $(`<ul/>`);
+              $.each($items, function (i, o) {
+                var $title = $(o).find(`title`).text();
+                var $link = $(o).find(`link`).text();
 
-                var $last_name = $(o).find(`last_name`).text();
+                var $aTag = $(`<a/>`)
+                  .attr({
+                    href: $link,
+                    target: `_blank`,
+                  })
+                  .text($title);
 
-                var $email = $(o).find(`email`).text();
-
-                var row = $(`<tr/>`).append(
-                  $(`<td/>`).text($id),
-                  $(`<td/>`).text($first_name),
-                  $(`<td/>`).text($last_name),
-                  $(`<td/>`).text($email)
-                );
-                tb.append(row);
+                var $litag = $(`<li/>`).append($aTag);
               });
-              $(`.wrap`).append(tb);
+              $(`.wrap`).append($ulTag);
             }
-            $(`tr:even`).css(`background-color`, `yellow`);
-            $(`tr:odd`).css(`background-color`, `green`);
           },
         });
       });
