@@ -9,28 +9,17 @@
     <div class="wrap"></div>
     <script>
       $(function () {
-        $.ajax({
-          url: `book.json`,
-          dataType: `json`,
-          success: function (data) {
-            if (data.length > 0) {
-              var tb = $(`<table>`);
-              for (var i in data) {
-                var $title = data[i].title;
-                var $author = data[i].author;
-                var $price = data[i].price;
+        $.getJSON(`book.json`, function (data) {
+          var books = data.book;
 
-                var row = $(`<tr/>`).append(
-                  $(`<td/>`).text($id),
-                  $(`<td/>`).text($first_name),
-                  $(`<td/>`).text($last_name)
-                );
-
-                tb.append(row);
-              }
-              $(`.wrap`).append(tb);
-            }
-          },
+          $(books).each(function (i, obj) {
+            var title = obj.title;
+            var author = obj.author;
+            var price = obj.price;
+            var text =
+              `<li>` + title + `,` + author + `,` + price + `</li><hr>`;
+            $(`body`).append(text);
+          });
         });
       });
     </script>
