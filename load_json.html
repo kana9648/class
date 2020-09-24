@@ -5,35 +5,30 @@
     <title>AJAX</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
   </head>
-  <body class="wrap">
+  <body>
     <script>
       $(function () {
-     $.ajax({
+        $.ajax({
           url: `book.json`,
           dataType: `json`,
           success: function (data) {
-            var $data = $(data).find(`book`);
-            if ($data.length > 0) {
-              var tb = $(`<table/>`);
-              $.each($data, function (i, o) {
-                var $id = $(o).find(`title`).text();
-
-                var $first_name = $(o).find(`author`).text();
-
-                var $last_name = $(o).find(`price`).text();
+            if (data.length > 0) {
+              var tb = $(`<table>`);
+              for (var i in data) {
+                var $title = data[i].title;
+                var $author = data[i].author;
+                var $price = data[i].price;
 
                 var row = $(`<tr/>`).append(
                   $(`<td/>`).text($id),
                   $(`<td/>`).text($first_name),
-                  $(`<td/>`).text($last_name),
-                
+                  $(`<td/>`).text($last_name)
                 );
+
                 tb.append(row);
-              });
-              $(`.wrap`).append(tb);
+              }
+              $(`body`).append(tb);
             }
-            $(`tr:even`).css(`background-color`, `yellow`);
-            $(`tr:odd`).css(`background-color`, `green`);
           },
         });
       });
