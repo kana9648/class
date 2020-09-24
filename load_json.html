@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AJAX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $(function () {
+        $.ajax({
+          url: `book.json`,
+          dataType: `json`,
+          success: function (data) {},
+        });
+      });
+    </script>
+  </body>
+</html>
