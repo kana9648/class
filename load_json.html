@@ -11,7 +11,24 @@
         $.ajax({
           url: `book.json`,
           dataType: `json`,
-          success: function (data) {},
+          success: function (data) {
+            if (data.length > 0) {
+              var tb = $(`<table/>`);
+              for (var i in data) {
+                var $id = data[i].title;
+                var $name = data[i].author;
+                var $price = data[i].price;
+
+                var row = $(`<tr/>`).append(
+                  $("<td/>").text($id),
+                  $("<td/>").text($name),
+                  $("<td/>").text($price)
+                );
+                tb.append(row);
+              }
+              $(body).append(tb);
+            }
+          },
         });
       });
     </script>
